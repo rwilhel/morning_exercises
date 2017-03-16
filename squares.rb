@@ -1,12 +1,20 @@
-until x == 100
-  sum_1 = ((x += 1) ** 2)
-  sum_1.each do |z|
-    z + z
+x = 0
+100.times do |y|
+  z = (y+1) ** 2
+  x += z
 end
 
-100.times do |z|
-  y = (z += 1) 
-  puts y ** 2
+b = 0  
+c = 0
+100.times do |a|
+  a += 1
+  c = b += a
 end
 
+puts c**2 - x
+
+
+
+
+  
 
