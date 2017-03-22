@@ -7,6 +7,13 @@ class GroupedNames
     end
   end
 
+  def number_of_names
+    number_names = group_by_name do |number_name|
+      number_name.values.count
+    end
+  end
+
 end
 
 puts GroupedNames.new.group_by_name
+puts GroupedNames.new.number_of_names
