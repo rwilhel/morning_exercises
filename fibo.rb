@@ -1,9 +1,7 @@
-25.times { def fibo(num)
+def fibo(num)
   if num < 2
-    num += 1
     puts num
   else
-    puts fibo(num - 1) + fibo(x - 2)
+    puts num = (num - 1) + fibo(num - 2)
   end
-end }
 end
